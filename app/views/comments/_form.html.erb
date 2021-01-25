@@ -1,0 +1,16 @@
+<div class="new-comment">
+
+    <%= form_with model: [ @article, @article.comments.build ] do |form| %>
+    <div>
+        <%= form.text_field :commenter, class: "input is-primary", placeholder: :commenter %>
+    </div>
+    <br />
+    <div>
+        <%= form.text_area :body, class: "textarea is-primary", placeholder: :body %>
+    </div>
+    <br />
+    <div>
+        <%= form.submit class:"button is-primary is-outlined" %>
+    </div>
+    <% end %>
+</div>

@@ -1,0 +1,21 @@
+<% if @article %>
+<div class="article">
+    <div class="block">
+        <h1 class="title is-2"><%= @article.title %></h1>
+        <p class="content is-medium"><%= @article.body %></p>
+        <br />
+        <br />
+        <ul>
+            <%= link_to "Edit Article", edit_article_path(@article), class:"button is-primary is-outlined" %>
+            <%= link_to "Destroy", article_path(@article), method: :delete, 
+                        data: { confirm: "Are you sure?" }, class:"button is-danger is-outlined" %>
+        </ul>
+    </div>
+    <div class="comments">
+        <%= render @article.comments %>
+
+        <h2 class="is-size-3">Add a comment:</h2>
+        <%= render 'comments/form' %>
+    </div>
+</div>
+<% end %>

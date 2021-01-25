@@ -1,0 +1,39 @@
+// Place all the styles related to the Articles controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+.articles,
+.new-article {
+  text-align: center;
+  margin: 20px 300px;
+  a {
+    color: black;
+    transition-duration: 0.2s;
+    border-radius: 0;
+    padding: 10px;
+  }
+  a:hover {
+    background-color: aquamarine;
+    padding: 5px;
+    border-radius: 10px;
+  }
+}
+.article {
+  text-align: center;
+  margin: 20px 300px;
+
+  .comments {
+    padding: 10px;
+    margin: 10px;
+  }
+  a {
+    color: black;
+    transition-duration: 0.2s;
+    border-radius: 0;
+    padding: 10px;
+  }
+  a:hover {
+    background-color: aquamarine;
+    padding: 5px;
+    border-radius: 10px;
+  }
+}
