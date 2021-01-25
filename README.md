@@ -21,4 +21,5 @@ Things you may want to cover:
 
 * Deployment instructions
 
-* ...
+* Deployed in
+https://blogging-bulma.herokuapp.com
