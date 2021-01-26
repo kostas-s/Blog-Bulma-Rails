@@ -19,7 +19,10 @@
 }
 
 .new-comment {
-  margin: 10px 100px;
+  margin: 10px;
+  @media (min-width: 700px) {
+    margin: 10px 100px;
+  }
   a {
     color: black;
     transition-duration: 0.2s;
